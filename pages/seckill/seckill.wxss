@@ -1,0 +1,143 @@
+/* pages/seckill/seckill.wxss */
+page {
+  background-color: #F5F6FA;
+}
+
+.img {
+  width: 50rpx;
+  height: 50rpx;
+  vertical-align: middle;
+}
+
+.sec {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 10rpx;
+  font-size: 32rpx;
+  color: #FB0808;
+}
+
+.mar-a {
+  margin: 30rpx;
+}
+
+.end {
+  margin-left: 20rpx;
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 24rpx;
+}
+
+.tui-countdown-content {
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+  margin-top: 15rpx;
+  padding: 0 15rpx;
+  font-size: 26rpx;
+  display: inline-block;
+}
+
+.tui-conutdown-box {
+  display: inline-block;
+  height: 40rpx;
+  width: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  margin: 0 6rpx;
+}
+
+.tui-countdown-bg {
+  background-color: #DF0101;
+}
+
+.goods-img {
+  width: 200rpx;
+  height: 200rpx;
+
+}
+
+.box-flex {
+  display: flex;
+  margin-top: 20rpx;
+  align-items: center;
+  background-color: #fff;
+  padding: 12rpx;
+}
+
+.flex_name {
+  margin-left: 20rpx;
+flex: 1;
+}
+.name_overflow{
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  white-space: normal !important;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  font-size: 28rpx;
+  /* height: 30rpx; */
+}
+.progress {
+  margin-top: 20rpx;
+  width: 350rpx;
+}
+
+.num {
+  margin-top: 10rpx;
+  font-size: 26rpx;
+}
+
+.price {
+  align-items: flex-end;
+  margin-top: 10rpx;
+  vertical-align: middle;
+  height: 60rpx;
+  line-height: 60rpx;
+  float: left;
+}
+
+.price1 {
+  font-size: 32rpx;
+  color: #E02E24;
+}
+
+.price2 {
+  color: #ACACAC;
+  font-size: 26rpx;
+  margin-left: 10rpx;
+  text-decoration: line-through;
+}
+
+.rob {
+  display: inline-block;
+  text-align: center;
+  font-size: 30rpx;
+  background:linear-gradient(97deg,rgba(254,37,35,1),rgba(254,90,81,1));
+  color: #fff;
+  width: 124rpx;
+  float: right;
+  margin-top: 10rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 12rpx;
+}
+
+.rob1 {
+
+  display: inline-block;
+  text-align: center;
+  font-size: 30rpx;
+  background-color: #ACACAC ;
+  color: #fff;
+  width: 124rpx;
+  float: right;
+  margin-top: 80rpx;
+  height: 60rpx;
+  line-height: 60rpx;
+  border-radius: 12rpx;
+}

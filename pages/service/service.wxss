@@ -1,0 +1,7 @@
+/* pages/service/service.wxss */
+.img{
+  width: 100%;
+}
+page{
+  background-color: #fff;
+}

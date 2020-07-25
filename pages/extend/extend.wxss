@@ -1,0 +1,79 @@
+/* pages/extend/extend.wxss */
+page{
+  background-color: #F5F6FA
+}
+.posi-re{
+  position: relative
+}
+.bg-img{
+  width: 100%
+}
+.mid-img{
+  width: 80%;
+   position: absolute;
+  top: 0;
+  bottom: 0;
+    right: 0;
+  left: 0;
+  margin: auto;
+}
+.mart{
+  margin-top: 40rpx;
+  text-align: center
+}
+.wx-img{
+  width: 44rpx;
+  margin-right: 30rpx;
+  vertical-align: middle
+}
+.btn{
+  width: 80%;
+ height:74rpx;
+background:linear-gradient(97deg,rgba(254,37,35,1),rgba(254,90,81,1));
+border-radius:37rpx;
+line-height: 74rpx;
+text-align: center;
+font-size: 30rpx;
+color: #fff;
+margin: auto;
+}
+.code-img{
+  width: 30rpx;
+  vertical-align: middle;
+  margin-right: 20rpx
+}
+.mart1{
+  margin-top: 60rpx;
+  color: #333;
+  font-size: 30rpx;
+  font-weight: bold
+}
+button::after {
+  border: none;
+}
+.bg2{
+  background: none;
+  padding: 0;
+  margin: 0;
+}
+.btn0{margin-top: 30rpx;}
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname {
+  color: #aaa;
+}
+
+.usermotto {
+  margin-top: 200px;
+}

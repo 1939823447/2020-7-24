@@ -1,0 +1,110 @@
+{
+  "pages": [
+    "pages/extend/extend",
+    "pages/index/index",  
+    "pages/mteam/mteam",
+    "pages/catalog/catalog",
+    "pages/category/category",
+    "pages/ucenter/order/order",
+    "pages/auth/btnAuth/btnAuth",
+    "pages/ucenter/coupon/coupon",
+    "pages/shopping/checkout/checkout",
+    "pages/ucenter/orderDetail/orderDetail",
+    "pages/ucenter/address/address",
+    "pages/upgrade/upgrade",
+    "pages/seckilldetail/seckilldetail",
+    "pages/text/text",
+    "pages/service/service",
+    "pages/comment/comment",
+    "pages/ucenter/index/index",
+    "pages/teamDetail/teamDetail",
+    "pages/getphone/getphone",
+    "pages/goods/goods",
+    "pages/task/task",
+    "pages/wallet/wallet",
+    "pages/seckill/seckill",
+    "pages/collagedetail/collagedetail",
+    "pages/map/map",
+    "pages/submit/submit",
+    "pages/mteamDetail/mteamDetail",
+    "pages/team/team",
+    "pages/cart/cart",
+    "pages/integral/integral",
+    "pages/newGoods/newGoods",
+    "pages/hotGoods/hotGoods",
+    "pages/ucenter/addressAdd/addressAdd",
+    "pages/ucenter/footprint/footprint",
+    "pages/ucenter/feedback/feedback",
+    "pages/ucenter/collect/collect",
+    "pages/auth/login/login",
+    "pages/auth/register/register",
+    "pages/auth/reset/reset",
+    "pages/pay/pay",
+    "pages/payResult/payResult",
+    "pages/topic/topic",
+    "pages/commentPost/commentPost",
+    "pages/topicComment/topicComment",
+    "pages/brand/brand",
+    "pages/brandDetail/brandDetail",
+    "pages/search/search",
+    "pages/shopping/address/address",
+    "pages/shopping/addressAdd/addressAdd",
+    "pages/topicDetail/topicDetail",
+    "pages/auth/mobile/mobile",
+    "pages/shopping/selCoupon/selCoupon",
+    "pages/ucenter/help/help",
+    "pages/ucenter/helpInfo/helpInfo"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示" 
+  }
+},
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fd1844",
+    "navigationBarTitleText": "蜜桃美妆馆",
+    "navigationBarTextStyle": "white",
+    "enablePullDownRefresh": true
+    
+  },
+  "tabBar": {
+    "backgroundColor": "#fff",
+    "borderStyle": "white",
+    "selectedColor": "#FF1336",
+    "color": "#5B5B5B",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/ic_menu_choice_nor.png",
+        "selectedIconPath": "static/images/ic_menu_choice_pressed.png",
+        "text": "首页"
+      },
+    
+      {
+        "pagePath": "pages/catalog/catalog",
+        "iconPath": "static/images/ic_menu_sort_nor.png",
+        "selectedIconPath": "static/images/ic_menu_sort_pressed.png",
+        "text": "分类"
+      },
+      {
+        "pagePath": "pages/cart/cart",
+        "iconPath": "static/images/ic_menu_shoping_nor.png",
+        "selectedIconPath": "static/images/ic_menu_shoping_pressed.png",
+        "text": "购物车"
+      },
+      {
+        "pagePath": "pages/ucenter/index/index",
+        "iconPath": "static/images/ic_menu_me_nor.png",
+        "selectedIconPath": "static/images/ic_menu_me_pressed.png",
+        "text": "我的"
+      }
+    ]
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  },
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
+}

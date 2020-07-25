@@ -1,0 +1,134 @@
+<view class="container">
+  <!-- <view class="address-box">
+        <view class="address-item" bindtap="selectAddress" wx:if="{{checkedAddress.id > 0}}">
+            <view class="l">
+                <text class="name">{{checkedAddress.userName}}</text>
+                <text class="default" wx:if="{{checkedAddress.is_default === 1}}">默认</text>
+            </view>
+            <view class="m">
+                <text class="mobile">{{checkedAddress.telNumber}}</text>
+                <text class="address">{{checkedAddress.full_region+checkedAddress.detailInfo}}</text>
+            </view>
+            <view class="r">
+                <image src="/static/images/address_right.png"></image>
+            </view>
+        </view>
+        <view class="address-item address-empty" bindtap="addAddress" wx:if="{{checkedAddress.id <= 0}}">
+            <view class="m">
+               还没有收货地址，去添加
+            </view>
+            <view class="r">
+                <image src="/static/images/address_right.png"></image>
+            </view>
+        </view>
+    </view> -->
+ 
+  <!-- <view class="coupon-box" bindtap='tapCoupon'>
+        <view class="coupon-item">
+            <view class="l">
+                <text class="name">请选择优惠券</text>
+                <text class="txt">{{couponDesc}}</text>
+            </view>
+            <view class="r">
+                <image src="/static/images/address_right.png"></image>
+            </view>
+        </view>
+    </view> -->
+  <view class="title-bg">下单后需快递邮寄，请留填写正确的电话与地址哦~</view>
+  <!-- <view class='top_nav'>
+    <view class="nav-name {{item.typeId == currentId ? 'nav-hover':''}}" wx:for="{{section}}" wx:key="id" id='{{item.typeId}}' catchtap='handleTap'>
+      {{item.name}}
+    </view>
+  </view> -->
+  <!-- 到店自提 -->
+  <!-- <view hidden='{{currentId!=1}}'>
+    <view class='swiper_con'>
+      <view class="input-all bor-f">
+        <view class="check-flex">收货人：</view>
+        <input class="input"  type="text" placeholder="收货人" bindinput="bindinputName" value="{{userName}}"/>
+      </view>
+      <view class="input-all">
+        <view class="check-flex">手机：</view>
+        <input class="input" bindinput="bindinputMobile" value="{{telNumber}}" maxlength="15" type="text" placeholder="手机" />
+      </view>
+    </view>
+ <view class="map-bg" bindtap="getLocation">
+        <image src="../../../static/images/address.png" mode="widthFix" class="map-img"></image>深圳市罗湖区深南东路中建大厦1712
+      </view>
+  </view> -->
+  <!-- 快递配送 -->
+  <view hidden='{{currentId!=2}}'>
+    <view class='swiper_con'>
+      <view class="input-all bor-f">
+        <view class="check-flex">收货人：</view>
+       
+        <input class="input"  type="text" placeholder="收货人"  bindinput="bindinputName" value="{{userName}}" />
+      
+      </view>
+      <view class="input-all bor-f">
+        <view class="check-flex">手机：</view>
+        <input class="input" bindinput="bindinputMobile" value="{{telNumber}}" maxlength="15" type="text" placeholder="手机" />
+      </view>
+      <view class="input-all2">
+        <view class="check-flex2">地址： </view>
+     
+        <textarea class="tetxarea2" bindinput="bindinputAddress" value="{{provinceName}}{{cityName}}{{countyName}}{{detailInfo}}" maxlength="100" type="text" placeholder=""></textarea>
+  
+      </view>
+      <view class="map-text bor-f" bindtap="chooseAddress"><image src="../../../static/images/wx3.png" mode="widthFix" class="map-img1"></image>获取微信地址</view>
+    </view>
+  </view>
+  <view class="goods_mar">
+    <view class="goods-items">
+      <view class="item" wx:for="{{checkedGoodsList}}" wx:key="id" >
+        <view class="img">
+          <image src="{{item.list_pic_url}}"></image>
+        </view>
+        <view class="info">
+          <view class="t">
+            <text class="name">{{item.goods_name}}</text>
+          </view>
+          <!-- <view class="m">{{item.goods_specifition_name_value||''}}</view> -->
+          <view class="b">
+            <text class="lprice">￥{{item.retail_price}}</text>
+            <text class="number">x{{item.number}}</text>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="input-all">
+      <view class="check-flex">买家留言</view>
+   
+        <input class="input2" bindinput="bindinputNote" value="{{note}}" maxlength="20" type="text" placeholder="选填，给商家留言最多20字" />
+    </view>
+    <view class="input-all">
+      <view class="check-flex">微信号</view>
+      <input class="input2" bindinput="bindinputWxnum" value="{{wxnum}}" maxlength="15" type="text" placeholder="选填，以便商家联系" />
+    </view>
+    <view class="order-box">
+      <view class="order-item">
+        <view class="r">
+          <text class="txt2">共{{checkedGoodsList.length}}种，</text>
+        </view>
+        <view class="l">
+          <text class="name">小计：</text>
+        </view>
+        <view class="r">
+          <text class="txt">￥{{goodsTotalPrice}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="order-item1">
+      <view class="l1">
+        <text class="name">运费:</text>
+      </view>
+      <view class="r1">
+        <text class="txt">￥{{freightPrice}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="order-total">
+    <view class="l"><text class="order-num">共{{checkedGoodsList.length}}种，</text><text class="order-all">合计：</text><text class="oeder-pri">￥{{actualPrice}}</text></view>
+    <view class="r" bindtap="submitOrder">提交订单</view>
+  </view>
+</view> 

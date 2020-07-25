@@ -1,0 +1,4 @@
+<!--pages/service/service.wxml-->
+<view>
+<image src="../../static/images/code.jpg" mode="widthFix" class="img"></image>
+</view>

@@ -1,0 +1,16 @@
+.top_nav{
+  border-bottom: 1px solid #e6d9af;
+}
+.nav-name{
+  display: inline-block;
+  color: #2b2e33;
+  padding: 18rpx 18rpx 10rpx 18rpx;
+  font-size: 30rpx;
+}
+.nav-hover{
+  color: #f5a623;
+  font-size: 44rpx;
+}
+.aa text{
+  font-size: 38rpx
+}

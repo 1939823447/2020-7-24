@@ -1,0 +1,47 @@
+/* pages/mteamDetail/mteamDetail.wxss */
+page{
+  background-color: #F5F6FA
+}
+.mar{
+  margin: 60rpx 30rpx  30rpx
+}
+.til{
+font-size: 30rpx;
+color: #666666
+}
+.bg{
+  background-color: #fff;
+  padding: 36rpx 30rpx;
+  margin-top: 20rpx
+}
+.mar-t20{
+  margin-top: 40rpx;
+}
+.btn{
+  margin:220rpx 30rpx;
+
+height:74rpx;
+background:linear-gradient(97deg,rgba(254,37,35,1),rgba(254,90,81,1));
+border-radius:37rpx;
+line-height: 74rpx;
+text-align: center;
+font-size:38rpx;
+color: #fff;
+}
+.dis-flex{
+  display: flex
+}
+.input{
+width: 72%;
+color: #333;
+font-size: 30rpx
+}
+.name{
+  color: #666666;
+  font-size: 30rpx;
+  margin-right: 30rpx;
+  width: 150rpx;
+}
+.num{
+  color: #333;
+}

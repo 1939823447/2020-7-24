@@ -1,0 +1,7 @@
+<!--pages/submit/submit.wxml-->
+<view class="text-cen">
+<image src='../../static/images/success.png' mode="widthFix" class="icon"></image>
+<view class="text">提交成功</view>
+<view class="title">我们将会在3个工作日内处理您的提交申请</view>
+<view class="btn">返回</view>
+</view>

@@ -1,0 +1,48 @@
+<!--pages/wallet/wallet.wxml-->
+<view>
+	<view class="posi-re">
+		<image src="../../static/images/walletbg.png" mode="widthFix" class="walbg"></image>
+		<view class="posi-ab">
+			<view class="banlance">余额</view>
+			<!-- <block wx:if="{{sumMoney.levelInfo.balance==''?sumMoney.levelInfo.balance:0}}">  -->
+			<view class="num">{{sumMoney.levelInfo.balance==''?0:sumMoney.levelInfo.balance}}</view>
+			 <!-- </block> -->
+			<view class="dis-flex">
+				<view class="">
+					<view class="cash">已提现</view>
+					<view class="money">{{sumMoney.levelInfo.withdraw_money==''?0:sumMoney.levelInfo.withdraw_money}}</view>
+				</view>
+				<view>
+					<view  class="cash">总收入</view>
+					<view class="money">{{sumMoney.levelInfo.total_money==''?0:sumMoney.levelInfo.total_money}}</view>
+				</view>
+			</view>
+		</view>
+	</view>
+<view class="bg ">
+  <view class="dis-flex2">
+    <view class="name">持卡人姓名</view>
+    <input class="input" maxlength="15" type="text" placeholder="请输入持卡人姓名"  placeholder-style="color:#666" bindinput="bindinputName" value="{{sumMoney.bankInfo.bank_account_name}}"/>
+  </view>
+ <view class="dis-flex2">
+    <view class="name">银行卡号</view>
+    <input class="input" type="number" placeholder="请输入银行卡号"  placeholder-style="color:#666" bindinput="bindinputIDCard" value="{{sumMoney.bankInfo.bank_account}}" maxlength="19"/>
+  </view>
+	 <view class="dis-flex2">
+    <view class="name">开户行</view>
+    <input class="input" type="text" placeholder="请输入开户行"  placeholder-style="color:#666" bindinput="bindinputBank" value="{{sumMoney.bankInfo.bank_name}}"/>
+  </view>
+		 <view class="dis-flex2">
+    <view class="name">手机号码</view>
+    <input class="input" type="text" placeholder="请输入手机号码"  placeholder-style="color:#666" value="{{sumMoney.bankInfo.mobile}}"  bindinput="bindinputPhone"/>
+  </view>
+	 <view class="dis-flex2">
+    <view class="name">提现金额</view>
+    <input class="input"  type="number" placeholder="请输入金额"  placeholder-style="color:#666" bindinput="bindinputMoney"  value="" />
+  </view>
+		 <view class="dis-flex3">
+    <view class="server">手续费（2%）</view>
+  </view>
+	<view class="btn"  bindtap="applyInfo">提交申请</view>
+</view>
+</view>

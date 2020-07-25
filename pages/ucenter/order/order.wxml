@@ -1,0 +1,667 @@
+<view class="container">
+	<!-- <view>
+		<view class='top_nav'>
+			<view class="nav-name {{item.typeId == currentId ? 'nav-hover':''}}" wx:for="{{section}}" wx:key="id" id='{{item.typeId}}' catchtap='handleTap'>
+				{{item.name}}
+			</view>
+		</view>
+	</view> -->
+	<!-- //自提订单 -->
+	<!-- <view hidden='{{currentId!=1}}'>
+		<view>
+			<view class='top_nav2'>
+				<view class="nav-name2 {{item.typeId2 == currentId2 ? 'nav-hover2':''}}" wx:for="{{section2}}" wx:key="id" id='{{item.typeId2}}' catchtap='handleTap2'>
+					{{item.name}}
+				</view>
+			</view>
+		</view> -->
+	
+		<!-- <view hidden='{{currentId2!=1}}'>
+			<view wx:for="{{orderList}}" wx:key="id">
+				<view wx:if="{{item.take_way==1}}">
+					<view class="orders">
+						<view class="order">
+							<navigator url="../orderDetail/orderDetail?id={{item.id}}">
+								<view class="h">
+									<view class="l">订单编号：{{item.order_sn}}</view>
+									<view class="r">{{item.order_status_text}}</view>
+								</view>
+								<view class="goods" wx:for="{{item.goodsList}}" wx:key="{{gitem.id}}" wx:for-item="gitem">
+									<view class="img">
+										<image src="{{gitem.list_pic_url}}" background-size="cover"></image>
+									</view>
+									<view class="info">
+										<text class="name">{{gitem.goods_name}}</text>
+										<text class="number">共{{gitem.number}}件商品</text>
+									</view>
+									<view class="status"></view>
+								</view>
+								<view>
+									<view class="goods-items">
+										<view class="item" wx:for="{{item.orderGoodsVoList}}" wx:for-item="gitem2" wx:key="{{gitem2.id}}">
+											<view class="img">
+												<image src="{{gitem2.list_pic_url}}" background-size="cover"></image>
+											</view>
+											<view class="info">
+												<view class="t">
+													<text class="name">{{gitem2.goods_name}} </text>
+												</view>-->
+												<!-- <view class="m">{{item.goods_specifition_name_value||''}}</view> -->
+												<!-- <view class="b2">
+													<text class="lprice">{{gitem2.retail_price}}</text>
+													<text class="number">{{gitem2.number}}</text>
+												</view>
+											</view>
+										</view>
+									</view>
+									<view class="b">
+										<view class="l">
+											<text class="gd1"> 共{{item.goodsCount}}件，</text>
+											<text class="c2"> 合计：</text>￥{{item.actual_price}}</view>
+									</view>
+								</view>
+							</navigator>
+							<view class="b2">
+								<view class="r">  -->
+									<!-- <button class="btn2" bindtap="showDialogBtn">取消订单</button> -->
+									<!-- <button class="btn" data-order-index="{{index}}" catchtap="payOrder" wx:if="{{item.handleOption.pay}}">立即支付</button> -->
+								<!-- </view>
+							</view>
+						</view>
+
+					</view>
+				</view>
+			</view>
+			<block wx:if="{{orderl==0}}">
+				<view class="order-center">
+					<image src="../../../static/images/order1.png" mode="widthFix" class="order-img"></image>
+					<view class="orderText">您还没有相关订单</view>
+				</view>
+			</block>
+		</view> -->
+		<!-- <view hidden='{{currentId2!=2}}'>
+			<view wx:for="{{orderList}}" wx:key="id">
+				<block wx:if="{{item.order_status==0}}">
+					<block wx:if="{{item.take_way==1}}">
+						<view class="orders">
+							<view class="order">
+								<navigator url="../orderDetail/orderDetail?id={{item.id}}">
+									<view class="h">
+										<view class="l">订单编号：{{item.order_sn}}</view>
+										<view class="r">{{item.order_status_text}}</view>
+									</view>
+									<view class="goods" wx:for="{{item.goodsList}}" wx:key="{{gitem.id}}" wx:for-item="gitem">
+										<view class="img">
+											<image src="{{gitem.list_pic_url}}" background-size="cover"></image>
+										</view>
+										<view class="info">
+											<text class="name">{{gitem.goods_name}}</text>
+											<text class="number">共{{gitem.number}}件商品</text>
+										</view>
+										<view class="status"></view>
+									</view>
+									<view class="goods-items">
+										<view class="item" wx:for="{{item.orderGoodsVoList}}" wx:for-item="gitem2" wx:key="{{gitem2.id}}">
+											<view class="img">
+												<image src="{{gitem2.list_pic_url}}" background-size="cover"></image>
+											</view>
+											<view class="info">
+												<view class="t">
+													<text class="name">{{gitem2.goods_name}} </text>
+												</view> -->
+												<!-- <view class="m">{{item.goods_specifition_name_value||''}}</view> -->
+												<!-- <view class="b2">
+													<text class="lprice">{{gitem2.retail_price}}</text>
+													<text class="number">{{gitem2.number}}</text>
+												</view>
+											</view>
+										</view>
+									</view>
+									<view class="b">
+										<view class="l">
+											<text class="gd1"> 共1件，</text>
+											<text class="c2"> 合计：</text>￥{{item.actual_price}}</view>
+									</view>
+								</navigator>
+								<view class="b2">
+									<view class="r"> -->
+										<!-- <button class="btn2">取消订单</button> -->
+										<!-- <button class="btn" data-order-index="{{index}}" catchtap="payOrder" wx:if="{{item.handleOption.pay}}">立即支付</button> -->
+									<!-- </view>
+								</view>
+							</view>
+						</view>
+
+					</block>
+				</block> -->
+				<!-- <view>{{item.order_status.length}}</view> -->
+			<!-- </view>
+			<block wx:if="{{payment==0}}">
+				<view class="order-center">
+					<image src="../../../static/images/order1.png" mode="widthFix" class="order-img"></image>
+					<view class="orderText">您还没有相关订单</view>
+				</view>
+			</block>
+		</view> -->
+		<!-- <view hidden='{{currentId2!=3}}'>
+			<view wx:for="{{orderList}}" wx:key="id">
+				<view class="orders" wx:if="{{item.order_status==300}}">
+					<block wx:if="{{item.take_way==1}}">
+						<view class="order">
+							<navigator url="../orderDetail/orderDetail?id={{item.id}}">
+								<view class="h">
+									<view class="l">订单编号：{{item.order_sn}}</view>
+									<view class="r">{{item.order_status_text}}</view>
+								</view>
+								<view class="goods" wx:for="{{item.goodsList}}" wx:key="{{gitem.id}}" wx:for-item="gitem">
+									<view class="img">
+										<image src="{{gitem.list_pic_url}}" background-size="cover"></image>
+									</view>
+									<view class="info">
+										<text class="name">{{gitem.goods_name}}</text>
+										<text class="number">共{{gitem.number}}件商品</text>
+									</view>
+									<view class="status"></view>
+								</view>
+								<view class="goods-items">
+									<view class="item" wx:for="{{item.orderGoodsVoList}}" wx:for-item="gitem2" wx:key="{{gitem2.id}}">
+										<view class="img">
+											<image src="{{gitem2.list_pic_url}}" background-size="cover"></image>
+										</view>
+										<view class="info">
+											<view class="t">
+												<text class="name">{{gitem2.goods_name}} </text>
+											</view> -->
+											<!-- <view class="m">{{item.goods_specifition_name_value||''}}</view> -->
+											<!-- <view class="b2">
+												<text class="lprice">{{gitem2.retail_price}}</text>
+												<text class="number">{{gitem2.number}}</text>
+											</view>
+										</view>
+									</view>
+								</view>
+								<view class="b">
+									<view class="l">
+										<text class="gd1"> 共1件，</text>
+										<text class="c2"> 合计：</text>￥{{item.actual_price}}</view>
+								</view>
+							</navigator>
+							<view class="b2">
+								<view class="r"> -->
+									<!-- <button class="btn2">取消订单</button> -->
+									<!-- <button class="btn" data-order-index="{{index}}" catchtap="payOrder" wx:if="{{item.handleOption.pay}}">立即支付</button> -->
+								<!-- </view>
+							</view>
+						</view>
+					</block>
+				</view>
+			</view> -->
+			<!-- <block wx:if="{{pending_num==0}}">
+				<view class="order-center">
+					<image src="../../../static/images/order1.png" mode="widthFix" class="order-img"></image>
+					<view class="orderText">您还没有相关订单</view>
+				</view>
+			</block>
+		</view>
+		<view hidden='{{currentId2!=4}}'>
+			<view wx:for="{{orderList}}" wx:key="id">
+				<view class="orders" wx:if="{{item.order_status==301}}">
+					<view class="order" wx:if="{{item.take_way==1}}">
+						<navigator url="../orderDetail/orderDetail?id={{item.id}}">
+							<view class="h">
+								<view class="l">订单编号：{{item.order_sn}}</view>
+								<view class="r">{{item.order_status_text}}</view>
+							</view>
+							<view class="goods" wx:for="{{item.goodsList}}" wx:key="{{gitem.id}}" wx:for-item="gitem">
+								<view class="img">
+									<image src="{{gitem.list_pic_url}}" background-size="cover"></image>
+								</view>
+								<view class="info">
+									<text class="name">{{gitem.goods_name}}</text>
+									<text class="number">共{{gitem.number}}件商品</text>
+								</view>
+								<view class="status"></view>
+							</view>
+							<view class="goods-items">
+								<view class="item" wx:for="{{item.orderGoodsVoList}}" wx:for-item="gitem2" wx:key="{{gitem2.id}}">
+									<view class="img">
+										<image src="{{gitem2.list_pic_url}}" background-size="cover"></image>
+									</view>
+									<view class="info">
+										<view class="t">
+											<text class="name">{{gitem2.goods_name}} </text>
+										</view> -->
+										<!-- <view class="m">{{item.goods_specifition_name_value||''}}</view> -->
+										<!-- <view class="b2">
+											<text class="lprice">{{gitem2.retail_price}}</text>
+											<text class="number">{{gitem2.number}}</text>
+										</view>
+									</view>
+								</view>
+							</view>
+							<view class="b">
+								<view class="l">
+									<text class="gd1"> 共1件，</text>
+									<text class="c2"> 合计：</text>￥{{item.actual_price}}</view>
+							</view>
+						</navigator>
+						<view class="b2">
+							<view class="r"> -->
+								<!-- <button class="btn2">取消订单</button> -->
+								<!-- <button class="btn" data-order-index="{{index}}" catchtap="payOrder" wx:if="{{item.handleOption.pay}}">立即支付</button> -->
+							<!-- </view>
+						</view>
+					</view>
+				</view>
+			</view> -->
+			<!-- <block wx:if="{{reach==0}}">
+				<view class="order-center">
+					<image src="../../../static/images/order1.png" mode="widthFix" class="order-img"></image>
+					<view class="orderText">您还没有相关订单</view>
+				</view>
+			</block>
+		</view>
+		<view hidden='{{currentId2!=5}}'>
+			<view wx:for="{{orderList}}" wx:key="id">
+				<view class="orders" wx:if="{{item.order_status==101}}">
+					<view class="order" wx:if="{{item.take_way==1}}">
+						<navigator url="../orderDetail/orderDetail?id={{item.id}}">
+							<view class="h">
+								<view class="l">订单编号：{{item.order_sn}}</view>
+								<view class="r">{{item.order_status_text}}</view>
+							</view>
+							<view class="goods" wx:for="{{item.goodsList}}" wx:key="{{gitem.id}}" wx:for-item="gitem">
+								<view class="img">
+									<image src="{{gitem.list_pic_url}}" background-size="cover"></image>
+								</view>
+								<view class="info">
+									<text class="name">{{gitem.goods_name}}</text>
+									<text class="number">共{{gitem.number}}件商品</text>
+								</view>
+								<view class="status"></view>
+							</view>
+							<view class="goods-items">
+								<view class="item" wx:for="{{item.orderGoodsVoList}}" wx:for-item="gitem2" wx:key="{{gitem2.id}}">
+									<view class="img">
+										<image src="{{gitem2.list_pic_url}}" background-size="cover"></image>
+									</view>
+									<view class="info">
+										<view class="t">
+											<text class="name">{{gitem2.goods_name}} </text>
+										</view> -->
+										<!-- <view class="m">{{item.goods_specifition_name_value||''}}</view> -->
+										<!-- <view class="b2">
+											<text class="lprice">{{gitem2.retail_price}}</text>
+											<text class="number">{{gitem2.number}}</text>
+										</view>
+									</view>
+								</view>
+							</view>
+							<view class="b">
+								<view class="l">
+									<text class="gd1"> 共1件，</text>
+									<text class="c2"> 合计：</text>￥{{item.actual_price}}</view>
+							</view>
+						</navigator>
+						<view class="b2">
+							<view class="r"> -->
+								<!-- <button class="btn2">取消订单</button> -->
+								<!-- <button class="btn" data-order-index="{{index}}" catchtap="payOrder" wx:if="{{item.handleOption.pay}}">立即支付</button> -->
+							<!-- </view>
+						</view>
+					</view>
+				</view>
+			</view>
+			<block wx:if="{{cannel_num==0}}">
+				<view class="order-center">
+					<image src="../../../static/images/order1.png" mode="widthFix" class="order-img"></image>
+					<view class="orderText">您还没有相关订单</view>
+				</view>
+			</block>
+		</view>
+	</view> -->
+	<!-- //快递订单 -->
+	<view hidden='{{currentId!=2}}'>
+		<view>
+			<view class='top_nav2'>
+				<view class="nav-name2 {{item.typeId2 == currentId2 ? 'nav-hover2':''}}" wx:for="{{section2}}" wx:key="id" id='{{item.typeId2}}' catchtap='handleTap2'>
+					{{item.name}}
+				</view>
+			</view>
+		</view>
+		<!-- 全部 -->
+		<view class="ul {{TabUl[0]== currentId2 ? 'on':''}}">
+			<view wx:for="{{orderList}}" wx:key="id" id="{{item.id}}">
+				<view>
+					<view class="orders" wx:if="{{item.take_way==2}}">
+						<view class="order"  id="{{item.id}}">
+							<navigator url="../orderDetail/orderDetail?id={{item.id}}">
+								<view class="h">
+									<view class="l">订单编号：{{item.order_sn}}</view>
+									<view class="r" >{{item.order_status_text}}</view>
+								</view>
+								<view class="goods" wx:for="{{item.goodsList}}" wx:key="{{gitem.id}}" wx:for-item="gitem" wx:key="id">
+									<view class="img">
+										<image src="{{gitem.list_pic_url}}" background-size="cover"></image>
+									</view>
+									<view class="info">
+										<text class="name">{{gitem.goods_name}}</text>
+										<text class="number">共{{gitem.number}}件商品</text>
+									</view>
+									<view class="status"></view>
+								</view>
+								<view class="goods-items">
+									<view class="item" wx:for="{{item.orderGoodsVoList}}" wx:for-item="gitem2" wx:key="{{gitem2.id}}" wx:key="id">
+										<view class="img">
+											<image src="{{gitem2.list_pic_url}}" background-size="cover"></image>
+										</view>
+										<view class="info">
+											<view class="t">
+												<text class="name">{{gitem2.goods_name}} </text>
+											</view>
+											<!-- <view class="m">{{item.goods_specifition_name_value||''}}</view> -->
+											<view class="b2">
+												<text class="lprice">{{gitem2.retail_price}}</text>
+												<text class="number">{{gitem2.number}}</text>
+											</view>
+											<!-- <view class="delete" bindtap="binddeldteOrder" data-id="item.id">删除订单</view> -->
+										</view>
+									</view>
+								</view>
+								<view class="b">
+									<view class="l">
+										<text class="gd1"> 共1件，</text>
+										<text class="c2"> 合计：</text>￥{{item.actual_price}}</view>
+								</view>
+
+							</navigator>
+							<view class="b2">
+								<view class="r">
+								<block >
+									<button class="btn2" bindtap="bindDeleteOrder" id="{{item.order_sn}}" wx:if="{{item.order_status_text == '未付款'}}">删除记录</button>
+									</block>
+									<!-- <button class="btn" data-order-index="{{index}}" catchtap="payOrder" wx:if="{{item.handleOption.pay}}">立即支付</button> -->
+								</view>
+							</view>
+						</view>
+
+					</view>
+				</view>
+			</view>
+					<view wx:if="{{orderl2==0}}">
+				<view class="order-center">
+					<image src="../../../static/images/order1.png" mode="widthFix" class="order-img"></image>
+					<view class="orderText">您还没有相关订单</view>
+				</view>
+			</view>
+		</view>
+		<!-- 待付款 -->
+		<view class="ul {{TabUl[1]== currentId2 ? 'on':''}}">
+			<view wx:for="{{orderList}}" wx:key="id" wx:if="item.payStatus==0">
+				<view class="orders" wx:if="{{item.order_status==0}}">
+					<view class="order" wx:if="{{item.take_way==2}}">
+						<navigator url="../orderDetail/orderDetail?id={{item.id}}">
+							<view class="h">
+								<view class="l">订单编号：{{item.order_sn}}</view>
+								<view class="r">{{item.order_status_text}}</view>
+							</view>
+							<view class="goods" wx:for="{{item.goodsList}}" wx:key="gitemid" wx:for-item="gitem" >
+								<view class="img">
+									<image src="{{gitem.list_pic_url}}" background-size="cover"></image>
+								</view>
+								<view class="info">
+									<text class="name">{{gitem.goods_name}}</text>
+									<text class="number">共{{gitem.number}}件商品</text>
+								</view>
+								<view class="status"></view>
+							</view>
+							<view class="goods-items">
+								<view class="item" wx:for="{{item.orderGoodsVoList}}" wx:for-item="gitem2" wx:key="gitem2id">
+									<view class="img">
+										<image src="{{gitem2.list_pic_url}}" background-size="cover"></image>
+									</view>
+									<view class="info">
+										<view class="t">
+											<text class="name">{{gitem2.goods_name}} </text>
+										</view>
+										<!-- <view class="m">{{item.goods_specifition_name_value||''}}</view> -->
+										<view class="b2">
+											<text class="lprice">{{gitem2.retail_price}}</text>
+											<text class="number">{{gitem2.number}}</text>
+										</view>
+									</view>
+								</view>
+							</view>
+							<view class="b">
+								<view class="l">
+									<text class="gd1"> 共1件，</text>
+									<text class="c2"> 合计：</text>￥{{item.actual_price}}</view>
+							</view>
+						</navigator>
+						<view class="b2">
+							<view class="r">
+								<button class="btn2" bindtap="bindDeleteOrder" id="{{item.order_sn}}" vw:if="{{}}">删除记录</button>
+								<!-- <button class="btn2">取消订单</button> -->
+								<!-- <button class="btn" data-order-index="{{index}}" catchtap="payOrder" wx:if="{{item.handleOption.pay}}">立即支付</button> -->
+							</view>
+						</view>
+					</view>
+
+				</view>
+
+			</view>
+			<block wx:if="{{payment2==0}}">
+				<view class="order-center">
+					<image src="../../../static/images/order1.png" mode="widthFix" class="order-img"></image>
+					<view class="orderText">您还没有相关订单</view>
+				</view>
+			</block>
+		</view>
+		<!-- 待收货 -->
+		<view class="ul {{TabUl[2]== currentId2 ? 'on':''}}">
+			<view wx:for="{{orderList}}" wx:key="id" wx:if="item.orderStatus==201">
+				<view class="orders" wx:if="{{item.order_status==300}}">
+					<view class="order" wx:if="{{item.take_way==2}}">
+						<navigator url="../orderDetail/orderDetail?id={{item.id}}">
+							<view class="h">
+								<view class="l">订单编号：{{item.order_sn}}</view>
+								<view class="r">{{item.order_status_text}}</view>
+							</view>
+							<view class="goods" wx:for="{{item.goodsList}}" wx:key="{{gitem.id}}" wx:for-item="gitem">
+								<view class="img">
+									<image src="{{gitem.list_pic_url}}" background-size="cover"></image>
+								</view>
+								<view class="info">
+									<text class="name">{{gitem.goods_name}}</text>
+									<text class="number">共{{gitem.number}}件商品</text>
+								</view>
+								<view class="status"></view>
+							</view>
+							<view class="goods-items">
+								<view class="item" wx:for="{{item.orderGoodsVoList}}" wx:for-item="gitem2" wx:key="{{gitem2.id}}">
+									<view class="img">
+										<image src="{{gitem2.list_pic_url}}" background-size="cover"></image>
+									</view>
+									<view class="info">
+										<view class="t">
+											<text class="name">{{gitem2.goods_name}} </text>
+										</view>
+										<!-- <view class="m">{{item.goods_specifition_name_value||''}}</view> -->
+										<view class="b2">
+											<text class="lprice">{{gitem2.retail_price}}</text>
+											<text class="number">{{gitem2.number}}</text>
+										</view>
+									</view>
+								</view>
+							</view>
+							<view class="b">
+								<view class="l">
+									<text class="gd1"> 共1件，</text>
+									<text class="c2"> 合计：</text>￥{{item.actual_price}}</view>
+							</view>
+						</navigator>
+						<view class="b2">
+							<view class="r">
+								<!-- <button class="btn2">取消订单</button> -->
+								<button class="btn" data-order-index="{{index}}" catchtap="payOrder" wx:if="{{item.handleOption.pay}}">立即支付</button>
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+			<block wx:if="{{pending_num2==0}}">
+				<view class="order-center">
+					<image src="../../../static/images/order1.png" mode="widthFix" class="order-img"></image>
+					<view class="orderText">您还没有相关订单</view>
+				</view>
+			</block>
+		</view>
+		<!-- 已完成 -->
+		<view class="ul {{TabUl[3]== currentId2 ? 'on':''}}">
+			<view wx:for="{{orderList}}" wx:key="id" wx:if="item.shippingStatus==2">
+				<view class="orders" wx:if="{{item.order_status==301}}">
+					<view class="order" wx:if="{{item.take_way==2}}">
+						<navigator url="../orderDetail/orderDetail?id={{item.id}}">
+							<view class="h">
+								<view class="l">订单编号：{{item.order_sn}}</view>
+								<view class="r">{{item.order_status_text}}</view>
+							</view>
+							<view class="goods" wx:for="{{item.goodsList}}" wx:key="{{gitem.id}}" wx:for-item="gitem">
+								<view class="img">
+									<image src="{{gitem.list_pic_url}}" background-size="cover"></image>
+								</view>
+								<view class="info">
+									<text class="name">{{gitem.goods_name}}</text>
+									<text class="number">共{{gitem.number}}件商品</text>
+								</view>
+								<view class="status"></view>
+							</view>
+							<view class="goods-items">
+								<view class="item" wx:for="{{item.orderGoodsVoList}}" wx:for-item="gitem2" wx:key="{{gitem2.id}}">
+									<view class="img">
+										<image src="{{gitem2.list_pic_url}}" background-size="cover"></image>
+									</view>
+									<view class="info">
+										<view class="t">
+											<text class="name">{{gitem2.goods_name}} </text>
+										</view>
+										<!-- <view class="m">{{item.goods_specifition_name_value||''}}</view> -->
+										<view class="b2">
+											<text class="lprice">{{gitem2.retail_price}}</text>
+											<text class="number">{{gitem2.number}}</text>
+										</view>
+									</view>
+								</view>
+							</view>
+							<view class="b">
+								<view class="l">
+									<text class="gd1"> 共1件，</text>
+									<text class="c2"> 合计：</text>￥{{item.actual_price}}</view>
+							</view>
+						</navigator>
+						<view class="b2">
+							<view class="r">
+								<!-- <button class="btn2">取消订单</button> -->
+								<!-- <button class="btn" data-order-index="{{index}}" catchtap="payOrder" wx:if="{{item.handleOption.pay}}">立即支付</button> -->
+							</view>
+						</view>
+					</view>
+				</view>
+			</view>
+			<block wx:if="{{reach2==0}}">
+				<view class="order-center">
+					<image src="../../../static/images/order1.png" mode="widthFix" class="order-img"></image>
+					<view class="orderText">您还没有相关订单</view>
+				</view>
+			</block>
+		</view>
+		<!-- 已取消 -->
+		<!-- <view class="ul {{TabUl[4]== currentId2 ? 'on':''}}">
+			<view wx:for="{{orderList}}" wx:key="id" wx:if="item.orderStatus==101">
+				<view class="orders" wx:if="{{item.order_status==101}}">
+					<view class="order" wx:if="{{item.take_way==2}}">
+						<navigator url="../orderDetail/orderDetail?id={{item.id}}">
+							<view class="h">
+								<view class="l">订单编号：{{item.order_sn}}</view>
+								<view class="r">{{item.order_status_text}}</view>
+							</view>
+							<view class="goods" wx:for="{{item.goodsList}}" wx:key="{{gitem.id}}" wx:for-item="gitem">
+								<view class="img">
+									<image src="{{gitem.list_pic_url}}" background-size="cover"></image>
+								</view>
+								<view class="info">
+									<text class="name">{{gitem.goods_name}}</text>
+									<text class="number">共{{gitem.number}}件商品</text>
+								</view>
+								<view class="status"></view>
+							</view>
+							<view class="goods-items">
+								<view class="item" wx:for="{{item.orderGoodsVoList}}" wx:for-item="gitem2" wx:key="{{gitem2.id}}">
+									<view class="img">
+										<image src="{{gitem2.list_pic_url}}" background-size="cover"></image>
+									</view>
+									<view class="info">
+										<view class="t">
+											<text class="name">{{gitem2.goods_name}} </text>
+										</view>
+										<view class="m">{{item.goods_specifition_name_value||''}}</view> -->
+										<!-- <view class="b2">
+											<text class="lprice">{{gitem2.retail_price}}</text>
+											<text class="number">{{gitem2.number}}</text>
+										</view>
+									</view>
+								</view>
+							</view>
+							<view class="b">
+								<view class="l">
+									<text class="gd1"> 共1件，</text>
+									<text class="c2"> 合计：</text>￥{{item.actual_price}}</view>
+							</view>
+						</navigator>
+						<view class="b2">
+							<view class="r"> -->
+								<!-- <button class="btn2">取消订单</button> -->
+								<!-- <button class="btn" data-order-index="{{index}}" catchtap="payOrder" wx:if="{{item.handleOption.pay}}">立即支付</button> -->
+							<!-- </view>
+						</view>
+					</view>
+				</view>
+			</view>
+			<block wx:if="{{cannel_num2==0}}">
+				<view class="order-center">
+					<image src="../../../static/images/order1.png" mode="widthFix" class="order-img"></image>
+					<view class="orderText">您还没有相关订单</view>
+				</view>
+			</block>
+		</view>  -->
+
+	</view>
+
+	<!-- <view wx:if="{{orderList.length>6}}" class="loadmore">
+		<block wx:if="{{nomore}}">
+			<text>{{nomoreText}} </text>
+		</block>
+		<block wx:else>
+			<text class="iconfont icon-loading loading" space="nbsp"></text>
+			<text> {{loadmoreText}} </text>
+		</block>
+	</view> -->
+
+ 
+
+</view>
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+	<image src="../../../static/images/d.png" mode="widthFix" class="dimg"></image>
+	<view class="posi-ab">
+		<image src="../../../static/images/close2.png" class="close-img" mode="widthFix" bindtap="hideModal"></image>
+		<view class="modal-title"> 温馨提示</view>
+		<view class="modal-content">
+			是否确定取消该订单
+		</view>
+		<view class="modal-footer">
+			<view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+			<view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+		</view>
+	</view>
+</view>

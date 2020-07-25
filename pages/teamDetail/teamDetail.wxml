@@ -1,0 +1,34 @@
+<!--pages/teamDetail/teamDetail.wxml-->
+<view class="bg">
+	<view class="mar-all">
+		<view wx:for="{{consumerRecord}}">
+			<view class="dis">
+				<view class="name">产品名称</view>
+				<view class="name2">{{item.goods_name}}</view>
+			</view>
+			<view class="dis2">
+				<view class="name">商品价格</view>
+				<view class="name2">{{item.goods_price}}</view>
+			</view>
+			<view class="dis1">
+				<view class="name">购买方式</view>
+				<view class="name2">{{item.order_type}}</view>
+			</view>
+		</view>
+   
+		<!-- <view class="dis">
+      <view class="name">地址</view>
+      <view class="name2">深圳市龙华区大浪街道深圳市龙华区大浪街道</view>
+    </view>
+     <view class="dis2">
+      <view class="name">备注</view>
+      <view class="name2">迪奥小姐花漾淡香氛</view>
+    </view> -->
+	</view>
+</view>
+ <view wx:if="{{consumerRecord.length==0}}">
+	<view class="order-center">
+					<image src="../../static/images/order1.png" mode="widthFix" class="order-img"></image>
+					<view class="orderText">您的团队还没有购买商品</view>
+				</view>
+</view>

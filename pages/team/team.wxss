@@ -1,0 +1,84 @@
+/* pages/team/team.wxss */
+page{
+  background-color: #F5F6FA;
+}
+.bg{
+  background-color: #fff;
+  margin-top: 30rpx
+}
+
+.dis-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto 30rpx;
+  padding: 40rpx 0;
+  border-bottom: 2rpx solid #F6F6F6;
+}
+.flex-img{
+  width: 90rpx
+}
+.middle{
+  flex: 1;
+  margin-left: 10rpx
+}
+.detail{
+  width:90rpx;
+height:34rpx;
+border:2rpx solid #E0C189;
+border-radius:17rpx;
+font-size: 24rpx;
+line-height: 34rpx;
+text-align: center;
+color: #E0C189
+}
+.top{
+  font-size: 30rpx;
+  color: #333;
+  font-weight: bold;
+  padding-bottom: 20rpx
+}
+.bot{
+  font-size: 28rpx;
+  color: #999999
+}
+.posi-re{
+  position: relative;
+  background-color: #fff;
+}
+.walbg{
+  width: 100%;
+  padding-top: 30rpx;
+  
+}
+.posi-ab{
+  position: absolute;
+  top: 30rpx;
+left: 0;
+right: 0;
+}
+.banlance{
+  padding-top: 83rpx;
+  font-size: 30rpx;
+  color: #E0C189;
+  text-align: center;
+}
+.num{
+  font-size: 70rpx;
+  color: #fff;
+  padding-top: 38rpx;
+  text-align: center;
+}
+.order-center{
+  text-align: center;
+}
+.order-img{
+  width: 250rpx;
+  margin: 166rpx auto 58rpx;
+
+}
+.order-img{
+  width: 250rpx;
+  margin: 166rpx auto 58rpx;
+
+}

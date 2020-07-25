@@ -1,0 +1,198 @@
+<view class="container">
+	<view class="bg">
+		<block wx:if="{{orderInfo.order_status==0}}">
+			<view class="bg-flex">
+				<view>
+					<view class="wait1">等待买家付款</view>
+					<view class="wait2">逾期未付款，订单将自动取消</view>
+					<!-- <view>剩余支付时间：30分26秒</view> -->
+				</view>
+				<view>
+					<image src="../../../static/images/wait.png" class=" wait-img" mode="widthFix"></image>
+				</view>
+			</view>
+		</block>
+			<block wx:if="{{orderInfo.order_status==107}}">
+			<view class="bg-flex">
+				<view>
+					<view class="wait1">拼团中</view>
+					<view class="wait2">等待其他小伙伴来拼团</view>
+					<!-- <view>剩余支付时间：30分26秒</view> -->
+				</view>
+				<view>
+					<image src="../../../static/images/wait.png" class=" wait-img" mode="widthFix"></image>
+				</view>
+			</view>
+		</block>
+		<block wx:if="{{orderInfo.order_status==300}}">
+			<view class="bg-flex">
+				<view>
+					<view class="wait3">卖家已发货</view>
+				</view>
+				<view>
+					<image src="../../../static/images/deliver.png" class=" deliver-img" mode="widthFix"></image>
+				</view>
+			</view>
+		</block>
+		<block wx:if="{{orderInfo.order_status==301}}">
+			<view class="bg-flex">
+				<view>
+					<view class="wait3">交易成功</view>
+				</view>
+				<view>
+					<image src="../../../static/images/trade.png" class=" trade-img" mode="widthFix"></image>
+				</view>
+			</view>
+		</block>
+				<block wx:if="{{orderInfo.order_status==108}}">
+			<view class="bg-flex">
+				<view>
+					<view class="wait3">拼单成功，等待发货</view>
+				</view>
+				<view>
+					<image src="../../../static/images/deliver.png" class=" trade-img" mode="widthFix"></image>
+				</view>
+			</view>
+		</block>
+	</view>
+	<view class="bg2">
+	<block wx:if="{{orderInfo.order_status==101}}">
+			<view class="bg-flex">
+				<view>
+					<view class="wait3">取消交易</view>
+						<view class="wait2">您已取消交易，还可以在看看哦！</view>
+				</view>
+				<view>
+					<image src="../../../static/images/cannel.png" class="cannel-img" mode="widthFix"></image>
+				</view>
+			</view>
+		</block>
+		<block wx:if="{{orderInfo.order_status==110}}">
+			<view class="bg-flex">
+				<view>
+					<view class="wait3">拼单失败，退款处理</view>
+						<view class="wait2">团已失效，已付金额将按原路退回</view>
+				</view>
+				<view>
+					<image src="../../../static/images/cannel.png" class="cannel-img" mode="widthFix"></image>
+				</view>
+			</view>
+		</block>
+	</view>
+	<view class="wait-bg">
+		<view class="wait-all">
+			<view class="wait-add">提货人信息</view>
+			<view class="waid-inb"><text class="inb1">{{orderInfo.consignee}}</text><text class="inb2">{{orderInfo.mobile}}</text></view>
+			<block wx:if="{{orderInfo.take_way==2}}">
+				<view class="waid-inb"><text class="inb1">地址：</text><text class="inb2">{{orderInfo.full_region + orderInfo.address}}</text></view>
+			</block>
+		</view>
+	</view>
+	<navigator url="/pages/map/map">
+		<view class="flex_map">
+			<view>
+				<image src="../../../static/images/logo1.png" class="head_img" mode="widthFix"></image>
+			</view>
+			<view class="map_text">
+				<view class="address_over">
+					<image src="../../../static/images/address.png" class="address_img" mode="widthFix"></image>
+					<text class="address_over1">深圳市罗湖区深南东路中建大厦1712 </text>
+
+					<image src="../../../static/images/more.png" class="more_img" mode="widthFix"></image>
+				</view>
+				<view class="add">点击获取与门店的距离</view>
+			</view>
+			<view class="map_code">
+				<image src="../../../static/images/address.png" class="code_img" mode="widthFix"></image>
+			</view>
+		</view>
+	</navigator>
+
+	<view class="order-goods">
+		<view class="h">
+			<view class="label">商品明细</view>
+			<view class="status">{{orderInfo.order_status_text}}</view>
+		</view>
+		<view class="goods">
+			<view class="item" wx:for="{{orderGoods}}" wx:key="id" >
+				<view class="img">
+					<image src="{{item.list_pic_url}}"></image>
+				</view>
+				<view class="info">
+					<view class="t">
+						<text class="name">{{item.goods_name}}</text>
+						<!-- <text class="number">x{{item.number}}</text> -->
+					</view>
+					<view class="attr">{{item.goods_specifition_name_value||''}}</view>
+					<view class="price"> <text class="pric">￥{{item.retail_price}}</text> <text class="num">x{{item.number}}</text></view>
+				</view>
+			</view>
+		</view>
+		<view class="">
+			<view class="pay-fee">
+				<text class="label">实付：</text>
+				<text class="txt">￥{{orderInfo.actual_price}}</text>
+			</view>
+		</view>
+	</view>
+	<view class="order-info">
+		<view class="item-a">下单时间：{{orderInfo.add_time}}</view>
+		<view class="item-a">订单编号：{{orderInfo.order_sn}}</view>
+			<block wx:if="{{orderInfo.order_status==300 || orderInfo.order_status==301 ||orderInfo.order_status==108}}">
+				<view class="item-a">快递公司：{{orderInfo.shipping_name}}</view>
+		<view class="item-a">快递单号：{{orderInfo.shipping_no}}</view>
+			</block>
+			
+	</view>
+</view>
+<view class="item-c">
+	<view wx:if="{{orderInfo.handleOption.pay}}">
+		<view class="r">
+			<view class="btn" bindtap="showDialogBtn">取消订单</view>
+			<!-- <view class="btn active" bindtap="payOrder">立即支付</view> -->
+		</view>
+	</view>
+	<!-- <view class="btn" bindtap="cancelOrder">取消订单</view> -->
+	<view wx:elif="{{orderInfo.handleOption.confirm}}">
+		<view class="r">
+			<view class="btn" bindtap="showDialogBtn">取消订单</view>
+			<!-- <view class="btn active" bindtap="confirmOrder">确认收货</view> -->
+			<view class="btn active" bindtap="showDialogBtn2">确认收货</view>
+		</view>
+	</view>
+	<!-- <view class="btn" bindtap="showDialogBtn">取消订单</view> -->
+	<!-- <view wx:else>
+			<view class="btn" bindtap="showDialogBtn">取消订单</view>
+		</view> -->
+</view>
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+
+<view class="modal-dialog" wx:if="{{showModal}}">
+	<image src="../../../static/images/d.png" mode="widthFix" class="dimg"></image>
+	<view class="posi-ab">
+		<image src="../../../static/images/close2.png" class="close-img" mode="widthFix" bindtap="hideModal"></image>
+		<view class="modal-title"> 温馨提示</view>
+		<view class="modal-content">
+			是否确定取消该订单
+		</view>
+		<view class="modal-footer">
+			<view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+			<view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+		</view>
+	</view>
+</view>
+<view class="modal-mask" bindtap="hideModal2" catchtouchmove="preventTouchMove" wx:if="{{showModal2}}"></view>
+<view class="modal-dialog" wx:if="{{showModal2}}">
+	<image src="../../../static/images/d.png" mode="widthFix" class="dimg"></image>
+	<view class="posi-ab">
+		<image src="../../../static/images/close2.png" class="close-img" mode="widthFix" bindtap="hideModal2"></image>
+		<view class="modal-title"> 温馨提示</view>
+		<view class="modal-content">
+			确定已经收到商品？
+		</view>
+		<view class="modal-footer">
+			<view class="btn-cancel" bindtap="onCancel2" data-status="cancel">取消</view>
+			<view class="btn-confirm" bindtap="onConfirm2" data-status="confirm">确定</view>
+		</view>
+	</view>
+</view>

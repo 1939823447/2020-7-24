@@ -1,0 +1,16 @@
+/* pages/getphone/getphone.wxss */
+.mobile-img{
+  width: 200rpx;
+}
+.mart{
+  margin-top: 200rpx;
+  text-align: center;
+}
+.text{
+  font-size: 30rpx;
+  color: #333;
+  margin-top: 26rpx;
+}
+page{
+  background-color: #fff;
+}

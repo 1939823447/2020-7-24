@@ -1,0 +1,95 @@
+/* pages/wallet/wallet.wxss */
+page{
+background-color: #F5F6FA;
+}
+.walbg{
+  width: 100%;
+  padding-top: 30rpx;
+  
+}
+.posi-re{
+  position: relative;
+  background-color: #fff;
+}
+.posi-ab{
+  position: absolute;
+  top: 30rpx;
+left: 0;
+right: 0;
+}
+.banlance{
+  padding-top: 38rpx;
+  font-size: 30rpx;
+  color: #E0C189;
+  text-align: center;
+}
+.num{
+  font-size: 50rpx;
+  color: #fff;
+  padding-top: 18rpx;
+  text-align: center;
+}
+.dis-flex{
+  display: flex;
+  align-items: center;
+  padding-top: 18rpx;
+  justify-content: space-around;
+}
+.cash{
+  font-size: 26rpx;
+  color: #E0C189;
+  padding-bottom: 28rpx;
+}
+.money{
+  font-size: 26rpx;
+  color: #fff;
+}
+.bg{
+  background-color: #fff;
+ 
+  margin-top: 30rpx;
+  padding-bottom: 48rpx;
+}
+.dis-flex2{
+  display: flex;
+  padding: 30rpx 0;
+  border-bottom: 2rpx solid #F6F6F6;
+  margin: 0 30rpx;
+  align-items: center;
+  
+}
+.dis-flex3{
+ 
+  padding: 30rpx 0;
+
+  margin: 0 30rpx;
+
+  
+}
+.name{
+  color: #333;
+  font-size: 30rpx;
+  margin-right: 30rpx;
+  width: 150rpx;
+}
+.server{
+  color: #666666;
+  font-size: 26rpx;
+}
+.input{
+  width: 72%;
+  color: #666;
+  font-size: 30rpx
+  }
+  .btn{
+    height:80rpx;
+background:linear-gradient(97deg,rgba(254,37,35,1),rgba(254,90,81,1));
+border-radius:40rpx;
+line-height: 80rpx;
+color: #fff;
+margin: 100rpx 30rpx 0rpx;
+text-align: center;
+
+font-size: 38rpx;
+font-weight:bold;
+  }

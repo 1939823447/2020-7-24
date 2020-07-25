@@ -1,0 +1,128 @@
+/* pages/team/team.wxss */
+page{
+  background-color: #F5F6FA;
+}
+.bg{
+  background-color: #fff;
+  margin-top: 30rpx
+}
+.dis-flex{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: auto 30rpx;
+  padding: 40rpx 0;
+  border-bottom: 2rpx solid #F6F6F6;
+}
+.flex-img{
+  width: 118rpx
+}
+.middle{
+  flex: 1;
+  margin-left: 24rpx
+}
+.detail{
+  width:90rpx;
+height:34rpx;
+border:2rpx solid #E0C189;
+border-radius:17rpx;
+font-size: 24rpx;
+line-height: 34rpx;
+text-align: center;
+color: #E0C189;
+display: inline-block;
+}
+.mar-r20{
+  margin-right: 20rpx;
+}
+.top{
+  font-size: 30rpx;
+  color: #333;
+  font-weight: bold;
+  padding-bottom: 20rpx
+}
+.bot{
+  font-size: 28rpx;
+  color: #999999
+}
+.bg-img{
+width: 94.8%;
+
+margin: 30rpx 21rpx;
+
+}
+.pos-re{
+  position: relative;
+  background-color: #fff;
+
+}
+.wx{
+  width: 80rpx;
+  border-radius: 50%;
+  margin-right: 24rpx
+}
+
+.dis-flex2{
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 30rpx;
+  left: 60rpx;
+  padding-top: 70rpx;
+  right: 21rpx;
+}
+.flex1{
+  flex:1
+}
+.sj{
+  width:110rpx;
+height:40rpx;
+background:rgba(17,23,43,1);
+opacity:0.5;
+border-radius:20rpx 0rpx 0rpx 20rpx;
+color: #E0C189;
+line-height: 40rpx;
+text-align: center;
+}
+
+.nickName{
+  color: #E0C189;
+  font-size: 30rpx
+}
+.name2{
+font-size: 24rpx;
+color: #fff
+}
+.team{
+  font-size: 24rpx;
+  color: #999999;
+  margin-top: 28rpx
+}
+.de-flex{
+  text-align: right
+}
+.member{
+  width:84rpx;
+height:30rpx;
+background:rgba(17,23,43,1);
+border-radius:14rpx;
+margin-left: 16rpx;
+display: inline-block;
+color: #fff;
+font-size: 22rpx;
+text-align: center;
+line-height: 30rpx;
+}
+.order-center{
+  text-align: center;
+}
+.order-img{
+  width: 250rpx;
+  margin: 166rpx auto 58rpx;
+
+}
+.order-img{
+  width: 250rpx;
+  margin: 166rpx auto 58rpx;
+
+}

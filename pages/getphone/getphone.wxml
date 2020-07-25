@@ -1,0 +1,5 @@
+<!--pages/getphone/getphone.wxml-->
+<view class="mart">
+<image src="../../static/images/mobile_bg.png" mode="widthFix" class="mobile-img"></image>
+<view class="text">已绑定手机号：<text>{{phoneNumber}}</text></view>
+</view>

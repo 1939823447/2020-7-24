@@ -1,0 +1,55 @@
+<!--pages/team/team.wxml-->
+<view class="pos-re">
+	<image src="../../static/images/my.png" mode="widthFix" class="bg-img"></image>
+	<view wx:if="{{sumMember.levelInfo.avatar}}">
+		<view class="dis-flex2">
+			<image src="{{sumMember.levelInfo.avatar}}" mode="widthFix" class="wx"></image>
+			<view class="flex1">
+				<view class="teamname"><text class="nickName">{{sumMember.levelInfo.nickname}}</text><text class="member">{{sumMember.levelInfo.user_level_name}}</text></view>
+				<view class="name2">团队人数：{{sumMember.teamScale}}</view>
+			</view>
+			<view>
+				<view class="sj" bindtap="bindUpgrade">升级</view>
+			</view>
+		</view>
+	</view>
+</view>
+<view class="bg" wx:if="{{sumMember.userBelong.length>0}}">
+	<block wx:for='{{sumMember.userBelong}}' wx:key="id">
+		<view class="dis-flex">
+			<block wx:if="{{item.user_level_id==1}}">
+				<image src="../../static/images/sensible.png" mode="widthFix" class="flex-img"></image>
+			</block>
+			<block wx:if="{{item.user_level_id==2}}">
+				<image src="../../static/images/partner.png" mode="widthFix" class="flex-img"></image>
+			</block>
+			<block wx:if="{{item.user_level_id==3}}">
+				<image src="../../static/images/agent.png" mode="widthFix" class="flex-img"></image>
+			</block>
+			<block wx:if="{{item.user_level_id==4}}">
+				<image src="../../static/images/member1.png" mode="widthFix" class="flex-img"></image>
+			</block>
+			<view class="middle">
+				<view class="top">
+					{{item.nickname}}
+				</view>
+				<view class="bot">{{item.mobile}}</view>
+			</view>
+			<view>
+				<view class="de-flex">
+					<!-- <view class="detail mar-r20" bindtap="bindUpgrade">升级 </view> -->
+					<navigator url="../mteamDetail/mteamDetail?id={{item.id}}" hover-class="none">
+						<view class="detail">详情</view>
+					</navigator>
+					<view class="team">{{item.register_time}}</view>
+				</view>
+			</view>
+		</view>
+	</block>
+</view>
+<view wx:if="{{sumMember.userBelong.length==0}}">
+	<view class="order-center">
+		<image src="../../static/images/order1.png" mode="widthFix" class="order-img"></image>
+		<view class="orderText">您还没有团队</view>
+	</view>
+</view>

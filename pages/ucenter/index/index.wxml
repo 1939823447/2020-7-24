@@ -1,0 +1,107 @@
+<view class="container">
+	<view class="main-bg">
+		<view class="mar-all">
+			<view>
+				<button class="userinfo" open-type="getUserInfo" bindgetuserinfo="bindGetUserInfo">
+					<image wx:if="{{userInfo && userInfo.avatarUrl}}" class="userinfo-avatar" src="{{ userInfo.avatarUrl }}" background-size="cover"></image>
+				</button>
+			</view>
+			<text class="userinfo-nickname">{{ userInfo.nickName }}</text>
+			<!-- <view class="member">
+				<image src="../../../static/images/member.png" class="mem-img" mode="widthFix" background-size="cover"></image>有效会员
+			</view> -->
+		</view>
+		<view class="posi-re" bindtap="bindExtend">
+			<image src="../../../static/images/bot.png" mode="widthFix" class="bot"></image>
+			<view class="posi-flex">
+				<view>
+					<view class="extend-text">推广赚钱</view>
+					<view class="text2">自用省钱，分享赚钱</view>
+				</view>
+
+				<view class="now">立即推广 <image src="../../../static/images/polygon.png" mode="widthFix" class="polygon"></image>
+				</view>
+			</view>
+		</view>
+	</view>
+	<!--<view class="logout" bindtap="exitLogin">退出登录</view>-->
+	<view class="line-bg">
+		<navigator url="/pages/ucenter/order/order">
+			<view class="bor">
+				<image src="../../../static/images/order.png" class="order-img" mode="widthFix"></image>
+				<view class="order-text">我的订单</view>
+				<image src="../../../static/images/back.png" class="back-img" mode="widthFix"></image>
+			</view>
+		</navigator>
+		<navigator url="/pages/extend/extend">
+			<view class="bor">
+				<image src="../../../static/images/extend.png" class="order-img" mode="widthFix"></image>
+				<view class="order-text">推广赚钱</view>
+				<image src="../../../static/images/back.png" class="back-img" mode="widthFix"></image>
+			</view>
+		</navigator>
+		<navigator url="/pages/wallet/wallet">
+			<view class="bor">
+				<image src="../../../static/images/wallet.png" class="order-img" mode="widthFix"></image>
+				<view class="order-text">我的钱包</view>
+				<image src="../../../static/images/back.png" class="back-img" mode="widthFix"></image>
+			</view>
+		</navigator>
+		<navigator url="/pages/task/task">
+			<view class="bor">
+				<image src="../../../static/images/task.png" class="order-img" mode="widthFix"></image>
+				<view class="order-text">任务达成度</view>
+				<image src="../../../static/images/back.png" class="back-img" mode="widthFix"></image>
+			</view>
+		</navigator>
+		<navigator url="/pages/mteam/mteam">
+			<view class="bor">
+				<image src="../../../static/images/mteam.png" class="order-img" mode="widthFix"></image>
+				<view class="order-text">我的团队</view>
+				<image src="../../../static/images/back.png" class="back-img" mode="widthFix"></image>
+			</view>
+		</navigator>
+		<navigator url="/pages/team/team">
+			<view class="bor">
+				<image src="../../../static/images/team.png" class="order-img" mode="widthFix"></image>
+				<view class="order-text">团队业绩 </view>
+				<image src="../../../static/images/back.png" class="back-img" mode="widthFix"></image>
+			</view>
+		</navigator>
+		<block wx:if="{{phone1}}">
+			<navigator url="/pages/getphone/getphone">
+				<view class="bor">
+					<image src="../../../static/images/team.png" class="order-img" mode="widthFix"></image>
+					<view class="order-text">绑定手机号</view>
+					<image src="../../../static/images/back.png" class="back-img" mode="widthFix"></image>
+				</view>
+			</navigator>
+		</block>
+		<view wx:if="{{!phone1}}">
+			<button open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber" class="btn">
+				<view class="bor" open-type='getPhoneNumber' bindgetphonenumber="getPhoneNumber">
+					<image src="../../../static/images/mobile.png" class="order-img" mode="widthFix"></image>
+					<view class="order-text">绑定手机号</view>
+					<image src="../../../static/images/back.png" class="back-img" mode="widthFix"></image>
+				</view>
+			</button>
+		</view>
+			<navigator url="/pages/service/service">
+			<view class="bor">
+				<image src="../../../static/images/service.png" class="order-img" mode="widthFix"></image>
+				<view class="order-text">客服售后 </view>
+				<image src="../../../static/images/back.png" class="back-img" mode="widthFix"></image>
+			</view>
+		</navigator>
+	</view>
+</view>
+<!-- <text>号：v1.0.0: 20200609 实现美妆商城</text> -->
+<!-- <text>版本号：v1.0.2: 20200610 修改拼团的</text> -->
+<!-- <text>版本号：v1.0.4: 20200613 增加运费</text> -->
+<!-- <text>版本号：v1.0.5: 20200615 修改分类的价格展示</text> -->
+<!-- <text>版本号：v1.0.6: 20200616 修改搜索，可以搜索出拼团的信息</text> -->
+<!-- <text>版本号：v1.0.7: 20200619 修改购买信息</text> -->
+<!-- <text>版本号：v1.0.12: 20200628 增加图片预览</text> -->
+<!-- <text>版本号：v1.0.13: 20200701 去掉自提货功能</text> -->
+<!-- <text>版本号：1.0.14: 20200701 加手机号验证</text> -->
+<!-- <text>版本号：1.0.15: 20200701 加删除记录</text> -->

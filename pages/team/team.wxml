@@ -1,0 +1,85 @@
+<!--pages/team/team.wxml-->
+<view class="posi-re">
+	<image src="../../static/images/walletbg.png" mode="widthFix" class="walbg"></image>
+	<view class="posi-ab">
+		<view class="banlance">销售总业绩</view>
+		<view class="num">{{sumMember.saleScale}}</view>
+	</view>
+</view>
+<view class="bg" wx:if="{{sumMember.userBelong.length>0}}">
+	<block wx:for='{{sumMember.userBelong}}' wx:key="id">
+		<view class="dis-flex">
+			<block wx:if="{{item.user_level_id==1}}">
+				<image src="../../static/images/sensible.png" mode="widthFix" class="flex-img"></image>
+			</block>
+			<block wx:if="{{item.user_level_id==2}}">
+				<image src="../../static/images/partner.png" mode="widthFix" class="flex-img"></image>
+			</block>
+			<block wx:if="{{item.user_level_id==3}}">
+				<image src="../../static/images/agent.png" mode="widthFix" class="flex-img"></image>
+			</block>
+			<block wx:if="{{item.user_level_id==4}}">
+				<image src="../../static/images/member1.png" mode="widthFix" class="flex-img"></image>
+			</block>
+			<view class="middle">
+				<view class="top">
+					{{item.nickname}}
+				</view>
+				<view class="bot">{{item.mobile}}</view>
+			</view>
+			<view>
+				<view class="de-flex">
+					<!-- <view class="detail mar-r20" bindtap="bindUpgrade">升级 </view> -->
+					<navigator url="../teamDetail/teamDetail?id={{item.id}}" hover-class="none">
+						<view class="detail">详情</view>
+					</navigator>
+				</view>
+			</view>
+		</view>
+	</block>
+</view>
+<view wx:if="{{sumMember.userBelong.length==0}}">
+	<view class="order-center">
+					<image src="../../static/images/order1.png" mode="widthFix" class="order-img"></image>
+					<view class="orderText">您还没有团队</view>
+				</view>
+</view>
+<!-- <view class="bg">
+
+  <view class="dis-flex" bindtap="bindDetail">
+    <view>
+      <image src="../../static/images/reseller.png" mode="widthFix" class="flex-img"></image>
+    </view>
+    <view class="middle">
+      <view class="top">
+        七月
+      </view>
+      <view class="bot">183****545</view>
+    </view>
+    <view class="detail">详情 </view>
+  </view>
+  <view class="dis-flex" bindtap="bindDetail">
+    <view>
+      <image src="../../static/images/agent.png" mode="widthFix" class="flex-img"></image>
+    </view>
+    <view class="middle">
+      <view class="top">
+        七月
+      </view>
+      <view class="bot">183****545</view>
+    </view>
+    <view class="detail">详情 </view>
+  </view>
+  <view class="dis-flex" bindtap="bindDetail">
+    <view>
+      <image src="../../static/images/partner.png" mode="widthFix" class="flex-img"></image>
+    </view>
+    <view class="middle">
+      <view class="top">
+        七月
+      </view>
+      <view class="bot">183****545</view>
+    </view>
+    <view class="detail">详情 </view>
+  </view>
+</view> -->

@@ -1,0 +1,7 @@
+{
+  "backgroundTextStyle": "dark",
+  "navigationBarBackgroundColor": "#ffffff",
+  "navigationBarTitleText": "业绩详情",
+  "navigationBarTextStyle": "black",
+  "enablePullDownRefresh": true
+}

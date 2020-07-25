@@ -1,0 +1,71 @@
+<view class="container">
+	<view class="search">
+		<navigator url="/pages/search/search" class="input">
+			<image class="icon" src="../../static/images/search.png"></image>
+			<text class="txt">商品搜索, 共{{goodsCount}}款好物</text>
+		</navigator>
+	</view>
+	<view class="catalog">
+		<scroll-view class="nav" scroll-y="true">
+			<view class="item {{ currentCategory.id == item.id ? 'active' : ''}}" wx:for="{{navList}}" data-id="{{item.id}}" wx:key="index" data-index="{{index}}" bindtap="switchCate">
+				<view class="name">{{item.name}}</view>
+			</view>
+		</scroll-view>
+		<scroll-view class="cate" scroll-y="true">
+			<!-- <navigator url="url" class="banner">
+            <image class="image" src="{{currentCategory.wap_banner_url}}"></image>
+            <view class="txt">{{currentCategory.front_name}}</view>
+        </navigator> -->
+			<!-- <view class="hd">
+            <text class="line"></text>
+            <text class="txt">{{currentCategory.name}}分类</text>
+            <text class="line"></text>
+        </view> -->
+			<view class="cate-nav">
+				<scroll-view scroll-x="true" class="cate-nav-body">
+					<view class="item {{ id == item.id ? 'active' : ''}}" wx:for="{{currentCategory.subCategoryList}}" bindtap="switchCate1" data-id="{{item.id}}" data-index="{{index}}" wx:key="id">
+						<view class="name"> {{item.name}}</view>
+					</view>
+				</scroll-view>
+			</view>
+			<block wx:if="{{goodsList.length>0}}">
+			<scroll-view scroll-y="true" scroll-top="{{scrollTop}}">
+				<view class="cate-item">
+					<view class="b">
+						<navigator class="item  " url="/pages/goods/goods?id={{iitem.id}}" wx:for="{{goodsList}}" wx:for-item="iitem" wx:for-index="iindex" wx:key="iidex">
+							<view class="cata_flex">
+								<view>
+									<image class="img" src="{{iitem.list_pic_url}}" background-size="cover" ></image>
+								</view>
+								<view class="cata_mar">
+									<text class="name">{{iitem.name}}</text>
+									<view class="flo_l">
+									<text class="price">￥{{iitem.retail_price}}</text>
+									<text class="price1">￥{{iitem.market_price}}</text>
+									</view>
+										<view class="cata_btn">去抢购</view>
+								</view>
+							</view>
+						</navigator>
+					</view>
+				</view>
+				<!-- <view wx:if="{{goodsList.length>4}}" class="loadmore">
+					<block wx:if="{{nomore}}">
+						<text>{{nomoreText}}</text>
+					</block>
+					<block wx:else>
+						<text class="iconfont icon-loading loading" space="nbsp"></text>
+						<text> {{loadmoreText}}</text>
+					</block>
+				</view> -->
+			</scroll-view>
+			</block>
+				<block wx:if="{{goodsList.length==0}}">
+				<view class="order-center">
+					<image src="../../static/images/order1.png" mode="widthFix" class="order-img"></image>
+					<view class="orderText">没有商品</view>
+				</view>
+			</block>
+		</scroll-view>
+	</view>
+</view>

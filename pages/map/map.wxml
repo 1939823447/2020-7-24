@@ -1,0 +1,27 @@
+<!--pages/map/map.wxml-->
+<view class="bg">
+  <view>
+    <image src="http://cdn.szbypos.com/upload/20200513/183035334172de.png" mode="widthFix" class="map-img"></image>
+    <view class="posi-ab">
+      <view class="map-flex">
+        <image src="../../static/images/logo1.png" mode="widthFix" class="wx-img"></image>
+        <view class="map-text">蜜桃美妆馆</view>
+        <view class="flex">
+          <!-- <image src="../../static/images/code.png" mode="widthFix" class="code_img"></image>-->
+          	<button class="map_code" open-type='share'>
+          <image src="../../static/images/share.png" mode="widthFix" class="share_img"></image> 
+          </button>
+        </view>
+      </view>
+    </view>
+    <view class="text-all">
+      <view class="time">营业时间：09:00-24:00</view>
+      <view class="tel">电话：82349684</view>
+      <view class="adr-flex" bindtap="getLocation">
+        <text class="adr">地址：</text>
+        <text>深圳市罗湖区深南东路中建大厦1712</text>
+      </view>
+    </view>
+
+  </view>
+</view>

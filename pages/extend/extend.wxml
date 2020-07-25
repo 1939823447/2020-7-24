@@ -1,0 +1,26 @@
+<!--pages/extend/extend.wxml-->
+<view class="posi-re">
+  <image src="../../static/images/ebg.png" mode="widthFix" class="bg-img"></image>
+  <view>
+    <image src="../../static/images/emiddle.png" mode="widthFix" class="mid-img"></image>
+  </view>
+</view>
+<view class="mart">
+<button open-type='share' class="bg2">
+  <view class="btn">
+    <image src="../../static/images/wx1.png" class="wx-img" mode="widthFix"></image>
+    立即邀请
+  </view>
+  </button>
+  <!-- <button  class="bg2 btn0" >
+  <view class="btn" bindtap="show">
+    <image src="../../static/images/pyq.png" class="wx-img" mode="widthFix"></image>
+    分享到朋友圈
+  </view>
+  </button> -->
+  <!-- <view class="mart1">
+ <image src="../../static/images/code2.png" class="code-img" mode="widthFix"></image>
+二维码邀请
+  </view> -->
+</view> 
+

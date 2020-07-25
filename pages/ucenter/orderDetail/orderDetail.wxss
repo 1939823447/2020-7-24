@@ -1,0 +1,526 @@
+page{
+    height: 100%;
+    width: 100%;
+    background: #f4f4f4;
+}
+
+.order-info{
+  
+    background: #fff;
+    height: auto;
+    overflow: hidden;
+    margin-top: 20rpx;
+    padding: 40rpx 30rpx 28rpx;
+    
+}
+
+.item-a{
+    padding-bottom: 20rpx;
+
+    font-size: 28rpx;
+    color: #333;
+    
+}
+
+.item-b{
+ 
+
+    font-size: 28rpx;
+    color: #333;
+}
+
+.item-c{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    /* background-color: #fff; */
+    height: 120rpx;
+    line-height: 120rpx;
+}
+
+.item-c .l{
+    float: left;
+}
+
+.item-c .r{
+
+    display: flex;
+    align-items: center;
+    padding-right: 30rpx;
+    justify-content: flex-end;
+    height: 120rpx;
+    background-color: #fff;
+   
+}
+
+.item-c .r .btn{
+    float: right;
+}
+
+.item-c .cost{
+    color: #b4282d;
+}
+
+.item-c .btn{
+    width:170rpx;
+    height:55rpx;
+    border:2rpx solid rgba(205,205,205,1);
+    border-radius:28rpx;
+    line-height: 55rpx;
+    text-align: center;
+    background:none;
+    font-size: 28rpx;
+    color: #333;
+}
+
+.item-c .btn.active{
+    width:170rpx;
+    height:55rpx;
+    border:0rpx solid rgba(205,205,205,1);
+    border-radius:28rpx;
+    line-height: 55rpx;
+    text-align: center;
+    background:linear-gradient(97deg,rgba(254,37,35,1),rgba(254,90,81,1));
+    font-size: 28rpx;
+    color: #fff;
+
+    margin-left: 30rpx;
+
+}
+
+.order-goods{
+    margin-top: 20rpx;
+    background: #fff;
+}
+
+.order-goods .h{
+   
+  
+    padding: 35rpx 30rpx 0rpx;
+
+
+}
+.order-goods .h::after{
+    content: "";
+    clear: both;
+    display: block;
+}
+.order-goods .h .label{
+    float: left;
+    font-size: 28rpx;
+    color: #333;
+}
+
+.order-goods .h .status{
+    float: right;
+    font-size: 28rpx;
+    color: #FE2825;
+}
+
+.order-goods .item{
+    display: flex;
+    align-items: center;
+   margin:  30rpx 30rpx 0;
+}
+
+.order-goods .item:last-child{
+    border-bottom: none;
+}
+.goods{
+    padding-bottom: 40rpx;
+    border-bottom: 2rpx solid #E7E7E7;
+}
+.order-goods .item .img{
+    height:160rpx;
+    width: 160rpx;
+   
+}
+
+.order-goods .item .img image{
+    height: 160rpx;
+    width: 160rpx;
+}
+
+.order-goods .item .info{
+    flex: 1;
+
+    margin-left: 40rpx;
+}
+
+.order-goods .item .t{
+
+    margin-bottom: 30rpx;
+    font-size: 28rpx;
+    color: #333;
+}
+
+.order-goods .item .t .name{
+    display: block;
+    float: left;
+    height: 33rpx;
+    line-height: 33rpx;
+    color: #333;
+    font-size: 30rpx;
+}
+
+.order-goods .item .t .number{
+    display: block;
+    float: right;
+    height: 33rpx;
+    text-align: right;
+    line-height: 33rpx;
+    color: #333;
+    font-size: 30rpx;
+}
+
+.order-goods .item .attr{
+    height: 29rpx;
+    line-height: 29rpx;
+    color: #666;
+    margin-bottom: 25rpx;
+    font-size: 25rpx;
+}
+
+.order-goods .item .price{
+    height: 30rpx;
+    line-height: 30rpx;
+    color: #333;
+    font-size: 30rpx;
+}
+
+.order-bottom{
+    margin-top: 20rpx;
+    padding-left: 31.25rpx;
+    height: auto;
+    overflow: hidden;
+    background: #fff;
+}
+
+.order-bottom .address{
+    height: 128rpx;
+    padding-top: 25rpx;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.order-bottom .address .t{
+    height: 35rpx;
+    line-height: 35rpx;
+    margin-bottom: 7.5rpx;
+}
+
+.order-bottom .address .name{
+    display: inline-block;
+    height: 35rpx;
+    width: 140rpx;
+    line-height: 35rpx;
+    font-size: 25rpx;
+}
+
+.order-bottom .address .mobile{
+    display: inline-block;
+    height: 35rpx;
+    line-height: 35rpx;
+    font-size: 25rpx;
+}
+
+.order-bottom .address .b{
+    height: 35rpx;
+    line-height: 35rpx;
+    font-size: 25rpx;
+}
+
+.order-bottom .total{
+    height: 106rpx;
+    padding-top: 20rpx;
+    border-bottom: 1px solid #f4f4f4;
+}
+
+.order-bottom .total .t{
+    height: 25rpx;
+    line-height: 25rpx;
+    margin-bottom: 7.5rpx;
+    display: flex;
+}
+
+.order-bottom .total .label{
+    width: 140rpx;
+    display: inline-block;
+    height: 35rpx;
+    line-height: 35rpx;
+    font-size: 25rpx;
+}
+
+.order-bottom .total .txt{
+    flex: 1;
+    display: inline-block;
+    height: 35rpx;
+    line-height: 35rpx;
+    font-size: 25rpx;
+}
+
+.pay-fee{
+ padding: 48rpx 30rpx 28rpx;
+ text-align: right;
+}
+
+.pay-fee .label{
+    display: inline-block;
+  
+    color: #333;
+    font-size: 26rpx;
+}
+
+.pay-fee .txt{
+    display: inline-block;
+
+    color: #FB0808;
+    font-size: 32rpx;
+}
+.bg{
+    background:linear-gradient(-30deg,rgba(255,97,1,1),rgba(255,142,2,1))
+}
+.bg-flex{
+    display: flex;
+    margin: 0rpx 30rpx;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40rpx 0;
+}
+.wait-img{
+width: 84rpx;
+}
+.deliver-img{
+    width: 108rpx;
+}
+.trade-img{
+    width: 104rpx;
+}
+.cannel-img{
+    width: 108rpx;
+}
+.bg2{
+    background:linear-gradient(-30deg,rgba(223,45,43,1),rgba(241,99,87,1));
+}
+.wait1{
+    color: #fff;
+    font-size: 30rpx;
+    padding-bottom: 30rpx;
+
+}
+.wait3{
+    color: #fff;
+    font-size: 30rpx;
+
+
+}
+.wait2{
+    color: #fff;
+    font-size: 26rpx;
+}
+.wait-all{
+    padding:36rpx 30rpx;
+}
+.wait-bg{
+
+   background-color: #fff;
+   margin-bottom: 20rpx;
+    }
+    .wait-add{
+        font-size: 30rpx;
+    }
+    .waid-inb{
+        padding-top: 33rpx;
+    }
+    .waid-inb text{
+        display: inline-block;
+        font-size: 30rpx;
+        color: #333;
+    }
+    .inb1{
+        margin-right: 22rpx;
+    }
+
+    .flex_map {
+        display: flex;
+        padding: 27rpx 30rpx 27rpx;
+        background-color: #fff;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 20rpx;
+      }
+      .address_img {
+        width: 22rpx;
+        vertical-align: middle;
+        margin-right: 5px;
+      
+      }
+      
+.address_over1 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 280rpx;
+    display: inline-block;
+    vertical-align: middle;
+    font-size: #333;
+    font-size: 30rpx;
+  }
+  .more_img {
+    width: 12rpx;
+    margin-left: 20rpx;
+    vertical-align: middle;
+  }
+  .map_code view {
+    color: #333;
+    font-size: 24rpx;
+  }
+  .code_img{
+      width: 34rpx;
+  }
+  .head_img {
+
+    width: 60rpx;
+    border-radius: 50%;
+  }
+  .map_text{
+    flex: 1;
+    margin-left: 20rpx;
+    
+  }
+  .add{
+      color: #999;
+      font-size: 26rpx;
+      margin-left: 32rpx;
+  }
+  .pric{
+    display: block;
+    float: left;
+    font-size: 32rpx;
+    color: #FB0808;
+  }
+  .num{
+font-size: 28rpx;
+color: #999999;
+display: block;
+float: right;
+
+  }
+  .container{
+      padding-bottom: 200rpx;
+  }
+  .modal-mask {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #000;
+    opacity: 0.5;
+    overflow: hidden;
+    z-index: 9000;
+    color: #fff;
+  }
+  
+  .modal-dialog {
+    width: 580rpx;
+    overflow: hidden;
+    position: fixed;
+  right: 0;
+    left: 0;
+    z-index: 9999;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    height: 540rpx;
+    /* background: #f9f9f9; */
+  
+    /* border-radius: 36rpx; */
+  }
+  
+  .modal-title {
+    padding-top: 80rpx;
+    font-size: 38rpx;
+    color: #fff;
+    text-align: center;
+    font-weight:500;
+  }
+  
+  .modal-content {
+  padding-top: 200rpx;
+  text-align: center;
+  color: #666;
+  font-size: 30rpx
+  
+  }
+  
+  .modal-input {
+    display: flex;
+    background: #fff;
+    border: 2rpx solid #ddd;
+    border-radius: 4rpx;
+    font-size: 28rpx;
+  }
+  
+  
+  .input {
+    width: 100%;
+    height: 82rpx;
+    font-size: 28rpx;
+    line-height: 28rpx;
+    padding: 0 20rpx;
+    box-sizing: border-box;
+    color: #333;
+  }
+  
+  input-holder {
+    color: #666;
+    font-size: 28rpx;
+  }
+  
+  .modal-footer {
+    display: flex;
+  
+  justify-content: space-between;
+  margin: 70rpx 50rpx 0;
+  
+  
+  }
+  
+  .btn-cancel {
+    width: 220rpx;
+    color: #333333;
+    text-align: center;
+    height:55rpx;
+  background:#CDCDCD;
+  border-radius:28rpx;
+  line-height: 55rpx;
+  font-size: 28rpx;
+  
+  
+  }
+  
+  .btn-confirm {
+    width:200rpx;
+  height:55rpx;
+  background:linear-gradient(97deg,rgba(254,37,35,1),rgba(254,90,81,1));
+  border-radius:28rpx;
+  text-align: center;
+  line-height: 55rpx;
+  font-size: 28rpx;
+  color: #fff
+  }
+  .dimg{
+    width: 100%
+  }
+  .posi-ab{
+    position: absolute;
+    top: 0;
+    width: 100%
+  }
+  .close-img{
+    width: 32rpx;
+    position: absolute;
+  right: 24rpx;
+  top: 24rpx;
+  
+  }

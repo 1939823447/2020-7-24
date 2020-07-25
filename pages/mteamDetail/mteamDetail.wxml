@@ -1,0 +1,26 @@
+<!--pages/mteamDetail/mteamDetail.wxml-->
+<view class="mar">
+  <view class="til">银行卡信息</view>
+</view>
+<block wx:if="{{bankInfo}}">
+<view wx:for="{{bankInfo}}">
+<view class="bg ">
+  <view class="dis-flex">
+    <view class="name">持卡人姓名</view>
+      <view class="namer">{{item.bank_account_name}}</view>
+  </view>
+</view>
+<view class="bg">
+  <view class="dis-flex">
+    <view class="name">银行卡号</view>
+      <view class="namer">{{item.bank_account}}</view>
+  </view>
+</view>
+<view class="bg ">
+  <view class="dis-flex">
+    <view class="name">开户行</view>
+        <view class="namer">{{item.bank_name}}</view>
+  </view>
+</view>
+</view>
+</block>

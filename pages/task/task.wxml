@@ -1,0 +1,9 @@
+<view class='weui'>
+<canvas class='oneCan' canvas-id='one' ></canvas>
+
+</view>
+<view class="dis-flex">
+<view class="flex1 bor"><view class="color co1"></view>已完成</view>
+<view class="flex1"><view class="color co2"></view>未完成</view>
+</view>
+<view class="task_font"> 注：升级需要最大任务量是<text>{{sumMember.levelInfo.maxLevel}}</text></view>

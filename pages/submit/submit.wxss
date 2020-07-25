@@ -1,0 +1,32 @@
+/* pages/submit/submit.wxss */
+page{
+  background-color: #F5F6FA;
+}
+.icon{
+  width: 188rpx;
+  margin: 71rpx auto 35rpx;
+  
+}
+.text-cen{
+  text-align: center;
+}
+.text{
+  font-size: 34px;
+  margin-bottom: 28rpx;
+}
+.title{
+  color: #666666;
+  font-size: 26rpx;
+}
+.btn{
+  height:80rpx;
+background:linear-gradient(97deg,rgba(254,37,35,1),rgba(254,90,81,1));
+border-radius:40rpx;
+line-height: 80rpx;
+color: #fff;
+margin: 100rpx 30rpx 0rpx;
+text-align: center;
+
+font-size: 38rpx;
+font-weight:bold;
+}

@@ -1,0 +1,60 @@
+/* pages/teamDetail/teamDetail.wxss */
+page{
+  background-color: #F5F6FA;
+}
+.bg{
+  background-color: #fff;
+  margin-top: 30rpx
+}
+.mar-all{
+  margin: 0 30rpx;
+
+ 
+}
+.dis1{
+  display: flex;
+  align-items: center;
+   justify-content: space-between;
+   padding-bottom: 32rpx;
+   border-bottom: 2rpx solid #F6F6F6;
+}
+.dis{
+  display: flex;
+  align-items: center;
+   /* border-bottom: 2rpx solid #F6F6F6; */
+   padding:32rpx 0;
+   justify-content: space-between
+}
+
+.dis2{
+padding-bottom: 32rpx;
+display: flex;
+align-items: center;
+ justify-content: space-between;
+
+}
+.name{
+ font-size: 30rpx;
+color: #666666;
+width: 152rpx;
+margin-right: 40rpx;
+
+}
+.name2{
+  font-size: 28rpx;
+  color: #333;
+  flex: 1
+}
+.order-center{
+  text-align: center;
+}
+.order-img{
+  width: 250rpx;
+  margin: 166rpx auto 58rpx;
+
+}
+.order-img{
+  width: 250rpx;
+  margin: 166rpx auto 58rpx;
+
+}

@@ -1,0 +1,21 @@
+<!--pages/mteamDetail/mteamDetail.wxml-->
+
+<view class="mar-t20">
+<view class="bg ">
+  <view class="dis-flex">
+    <view class="name">升级</view>
+        <view class="num">{{aUpGrade.level}}</view>
+    <!-- <input class="input" maxlength="15" type="number" placeholder="合伙人"  placeholder-style="color:#333"/> -->
+  </view>
+
+</view>
+<view class="bg">
+  <view class="dis-flex">
+    <view class="name">金额</view>
+    <view class="num">{{aUpGrade.money}}</view>
+    <!-- <input class="input" maxlength="15" type="number" placeholder="8888"  placeholder-style="color:#333"/> -->
+  </view>
+
+</view>
+<view class="btn" bindtap="bindpay">确认支付</view>
+</view>

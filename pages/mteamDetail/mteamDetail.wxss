@@ -1,0 +1,36 @@
+/* pages/mteamDetail/mteamDetail.wxss */
+page{
+  background-color: #F5F6FA
+}
+.mar{
+  margin: 60rpx 30rpx  30rpx
+}
+.til{
+font-size: 30rpx;
+color: #666666
+}
+.bg{
+  background-color: #fff;
+  padding: 36rpx 30rpx;
+  margin-top: 30rpx
+}
+.dis-flex{
+  display: flex
+}
+.input{
+width: 72%;
+color: #333;
+font-size: 30rpx
+}
+.name{
+  color: #666666;
+  font-size: 30rpx;
+  margin-right: 30rpx;
+  width: 150rpx;
+}
+.namer{
+  color: #333;
+  font-size: 30rpx;
+  margin-right: 30rpx;
+
+}

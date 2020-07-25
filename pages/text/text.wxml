@@ -1,0 +1,19 @@
+<!-- 导航 -->
+<view class='top_nav'>
+  <view class="nav-name {{item.typeId == currentId ? 'nav-hover':''}}" wx:for="{{section}}" wx:key="id" id='{{item.typeId}}' catchtap='handleTap'>
+    {{item.name}}
+  </view>
+</view>
+
+<!-- html课程 -->
+<view hidden='{{currentId!=1}}'>
+  <text>我是html课程</text>
+</view>
+<!-- css课程 -->
+<view hidden='{{currentId!=2}}'>
+  <text>我是css课程</text>
+    <text>我是css课程</text>  
+</view>
+
+
+

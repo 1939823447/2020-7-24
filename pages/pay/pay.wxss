@@ -1,0 +1,126 @@
+page{
+    min-height: 100%;
+    width: 100%;
+    background: #f4f4f4;
+}
+
+.container{
+  padding-top: 20rpx;
+}
+
+.total{
+  height: 104rpx;
+  background: #fff;
+  width: 100%;
+  line-height: 104rpx;
+  padding-left: 30rpx;
+  padding-right: 30rpx;
+}
+
+.total .label{
+  float: left;
+}
+
+.total .txt{
+  float: right;
+}
+
+.pay-list{
+    margin-top: 30rpx;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+}
+.pay-list .h{
+    width: 100%;
+ 
+    margin-left: 30rpx;
+    margin-bottom: 30rpx;
+}
+
+.pay-list .item{
+
+    padding: 20rpx 30rpx;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #f4f4f4;
+}
+.flex1{
+    flex: 1;
+}
+.icon2{
+    width: 38rpx;
+    height: 38rpx;
+}
+
+.pay-list .checkbox{
+
+    width: 40rpx;
+    height: 40rpx;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30rpx;
+}
+
+.pay-list .checkbox.checked{
+    background: url(http://cdn.szbypos.com/upload/20200512/15173675118688.png)  no-repeat;
+    background-size: 38rpx ;
+}
+
+.pay-list .icon-alipay{
+    display: inline-block;
+    vertical-align: middle;
+    background-image: url(http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/sprites/payMethod-s3c1faebee4-d754da9c65.png);
+    background-repeat: no-repeat;
+    background-size: 56.25rpx 189.583rpx;
+    margin-right: 10.5rpx;
+    width: 56.25rpx;
+    height: 56.25rpx;
+}
+
+.pay-list .icon-net{
+    display: inline-block;
+    vertical-align: middle;
+    background: url(http://yanxuan.nosdn.127.net/hxm/yanxuan-wap/p/20161201/style/img/sprites/payMethod-s3c1faebee4-d754da9c65.png) 0 -66.7rpx no-repeat;
+    background-size: 56.25rpx 189.583rpx;
+    margin-right: 10.5rpx;
+    width: 56.25rpx;
+    height: 56.25rpx;
+}
+
+.pay-list .icon{
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 30rpx;
+    width: 80rpx;
+    height: 80rpx;
+}
+
+.pay-list .name{
+    display: inline-block;
+    vertical-align: middle;
+ margin-bottom: 10rpx;
+}
+
+.pay-btn{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 100rpx;
+    width: 100%;
+    text-align: center;
+    line-height: 100rpx;
+    background: #FE2523;
+    color: #fff;
+    font-size: 30rpx;
+}
+
+.tips{
+ 
+  width: 100%;
+  font-size: 26rpx;
+  color: #999;
+
+
+}
